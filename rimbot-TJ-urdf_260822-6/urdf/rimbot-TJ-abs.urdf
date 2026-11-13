@@ -1,0 +1,1813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="rimbot-TJ-urdf_260822-6">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="9.3011190624992E-06 1.0355521122829E-06 0.334823517401409"
+        rpy="0 0 0" />
+      <mass
+        value="12.3594116700058" />
+      <inertia
+        ixx="0.341793827247594"
+        ixy="-2.54011312298025E-05"
+        ixz="-3.44097418460162E-07"
+        iyy="0.34259511658885"
+        iyz="-3.02422353752473E-08"
+        izz="0.361587515969302" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="armL_link1">
+    <inertial>
+      <origin
+        xyz="-2.04747401855165E-06 0.0017128822748893 0.0678929478379127"
+        rpy="0 0 0" />
+      <mass
+        value="0.801840306512841" />
+      <inertia
+        ixx="0.00162640958684467"
+        ixy="2.88546222163425E-08"
+        ixz="-2.54636839101349E-08"
+        iyy="0.00194228063090219"
+        iyz="-3.07977742059496E-05"
+        izz="0.000858305947339852" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armL_joint1"
+    type="revolute">
+    <origin
+      xyz="0 0.1212 1.121"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="armL_link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="3.106"
+      effort="20"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armL_link2">
+    <inertial>
+      <origin
+        xyz="0.0477161017284409 -1.86020701276046E-06 0.0214863266250922"
+        rpy="0 0 0" />
+      <mass
+        value="1.14647893137385" />
+      <inertia
+        ixx="0.00235198553577541"
+        ixy="8.66784823503238E-08"
+        ixz="-8.27293742654114E-05"
+        iyy="0.00541278922716663"
+        iyz="8.46283788351267E-08"
+        izz="0.00453230851798234" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armL_joint2"
+    type="revolute">
+    <origin
+      xyz="0 -0.023 0.0903"
+      rpy="-1.5708 -1.5708 0" />
+    <parent
+      link="armL_link1" />
+    <child
+      link="armL_link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armL_link3">
+    <inertial>
+      <origin
+        xyz="0.00584977189220737 0.000904170237435054 0.0866680138484504"
+        rpy="0 0 0" />
+      <mass
+        value="1.04276867425292" />
+      <inertia
+        ixx="0.00153242748833324"
+        ixy="-8.61969307679603E-06"
+        ixz="-0.000210634238286798"
+        iyy="0.00179816225020462"
+        iyz="-2.46273617851431E-05"
+        izz="0.00106684286699914" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armL_joint3"
+    type="revolute">
+    <origin
+      xyz="0.1435 0 0.023"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="armL_link2" />
+    <child
+      link="armL_link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="3.106"
+      effort="17"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armL_link4">
+    <inertial>
+      <origin
+        xyz="0.0373995069446831 0.00775992962921201 -0.0219292604725014"
+        rpy="0 0 0" />
+      <mass
+        value="0.800830214271958" />
+      <inertia
+        ixx="0.00143741308516387"
+        ixy="-0.000282024676225735"
+        ixz="4.70578337720532E-05"
+        iyy="0.00270578007805048"
+        iyz="9.77281684404353E-06"
+        izz="0.00221854222235199" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armL_joint4"
+    type="revolute">
+    <origin
+      xyz="0.018 -0.0235 0.1435"
+      rpy="-1.5708 -1.5708 3.1416" />
+    <parent
+      link="armL_link3" />
+    <child
+      link="armL_link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.53"
+      upper="1.047"
+      effort="17"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armL_link5">
+    <inertial>
+      <origin
+        xyz="-3.84592206192913E-07 4.50764958799255E-05 0.0860866785232706"
+        rpy="0 0 0" />
+      <mass
+        value="1.15993094030162" />
+      <inertia
+        ixx="0.00370218436242443"
+        ixy="-2.57037535979139E-08"
+        ixz="-8.19896273957651E-08"
+        iyy="0.00318202513349019"
+        iyz="-5.75720627338101E-06"
+        izz="0.0016307885746409" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armL_joint5"
+    type="revolute">
+    <origin
+      xyz="0.116 0.017996 -0.0235"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="armL_link4" />
+    <child
+      link="armL_link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="3.106"
+      effort="14"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armL_link6">
+    <inertial>
+      <origin
+        xyz="-2.71493432624226E-07 -0.00404898309789004 0.0449999666392711"
+        rpy="0 0 0" />
+      <mass
+        value="0.286165719804598" />
+      <inertia
+        ixx="0.000201989292864374"
+        ixy="-1.03735778205466E-10"
+        ixz="-3.97137447222055E-10"
+        iyy="0.000217453844185317"
+        iyz="3.43898285472813E-11"
+        izz="0.000188662741958896" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armL_joint6"
+    type="revolute">
+    <origin
+      xyz="0 -0.045 0.198"
+      rpy="1.5708 1.5708 3.1416" />
+    <parent
+      link="armL_link5" />
+    <child
+      link="armL_link6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.047"
+      upper="1.047"
+      effort="14"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armL_link7">
+    <inertial>
+      <origin
+        xyz="0.037479174288694 3.87989365591146E-06 -0.020351500842243"
+        rpy="0 0 0" />
+      <mass
+        value="0.350363286456445" />
+      <inertia
+        ixx="0.000444687802811222"
+        ixy="9.36092234096089E-07"
+        ixz="3.83577941294609E-05"
+        iyy="0.000855993632131828"
+        iyz="-6.27742775756438E-08"
+        izz="0.000644296599593923" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armL_joint7"
+    type="revolute">
+    <origin
+      xyz="0 0.0255 0.045"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="armL_link6" />
+    <child
+      link="armL_link7" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="14"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armL_linkFL">
+    <inertial>
+      <origin
+        xyz="0.00422033902314478 0 1.5174119616379E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0146144424400505" />
+      <inertia
+        ixx="8.13669821886627E-06"
+        ixy="2.64839580904741E-21"
+        ixz="1.44563515044231E-10"
+        iyy="4.11599020482727E-06"
+        iyz="3.56122582152077E-22"
+        izz="4.11599021002501E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_linkFL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_linkFL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armL_jointFL"
+    type="fixed">
+    <origin
+      xyz="0.0935999999999986 0 -0.0255000000000006"
+      rpy="0 3.59547409247824E-05 0" />
+    <parent
+      link="armL_link7" />
+    <child
+      link="armL_linkFL" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="armL_linkSensor">
+    <inertial>
+      <origin
+        xyz="0.0131234533970734 9.10382880192628E-15 4.71850378880312E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0815908525850947" />
+      <inertia
+        ixx="4.12393606875416E-05"
+        ixy="1.21336268816476E-20"
+        ixz="5.7122823983838E-10"
+        iyy="2.53519359725509E-05"
+        iyz="-8.49910253228428E-21"
+        izz="2.53519359930893E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_linkSensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_linkSensor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armL_jointSensor"
+    type="fixed">
+    <origin
+      xyz="0.00739999999521679 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="armL_linkFL" />
+    <child
+      link="armL_linkSensor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="amrL_linkToolFL">
+    <inertial>
+      <origin
+        xyz="0.00518222825663983 0.00916013068966048 1.8125323109075E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0465875345812981" />
+      <inertia
+        ixx="4.63395860438401E-05"
+        ixy="4.81962907538912E-07"
+        ixz="4.38301742947324E-10"
+        iyy="1.37992011872942E-05"
+        iyz="9.76911449253093E-12"
+        izz="3.40922014580606E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrL_linkToolFL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrL_linkToolFL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armL_jointToolFL"
+    type="fixed">
+    <origin
+      xyz="0.0269999999825492 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="armL_linkSensor" />
+    <child
+      link="amrL_linkToolFL" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="amrL_linkTransformCamera">
+    <inertial>
+      <origin
+        xyz="0.00780327294454652 0.0127121174660196 2.91139309216426E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00573249688664961" />
+      <inertia
+        ixx="1.53097935455474E-06"
+        ixy="-1.01599728176272E-07"
+        ixz="2.8646736443286E-11"
+        iyy="8.86034520540682E-07"
+        iyz="-5.00682494993548E-12"
+        izz="7.32517686893404E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrL_linkTransformCamera.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrL_linkTransformCamera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="amrL_jointTransformCamera"
+    type="fixed">
+    <origin
+      xyz="0.00399999999741452 0.0581662479035541 0"
+      rpy="0 0 0" />
+    <parent
+      link="amrL_linkToolFL" />
+    <child
+      link="amrL_linkTransformCamera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="amrL_linkCamera">
+    <inertial>
+      <origin
+        xyz="0.0125771993739252 -0.00337005041749605 4.52209910184465E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00767438801634322" />
+      <inertia
+        ixx="3.80975328618363E-07"
+        ixy="9.37013948962938E-08"
+        ixz="-1.13243202683367E-11"
+        iyy="7.05566481821913E-07"
+        iyz="3.36900938058777E-12"
+        izz="6.95935747208163E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrL_linkCamera.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrL_linkCamera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="amrL_jointCamera"
+    type="fixed">
+    <origin
+      xyz="0.0142459803344792 0.0232385192160012 0"
+      rpy="0 0 0" />
+    <parent
+      link="amrL_linkTransformCamera" />
+    <child
+      link="amrL_linkCamera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="amrL_linkCameraOptical">
+    <inertial>
+      <origin
+        xyz="-1.92068583260152E-14 1.99840144432528E-14 4.44089209850063E-15"
+        rpy="0 0 0" />
+      <mass
+        value="5.23598775598299E-10" />
+      <inertia
+        ixx="5.23598775598299E-19"
+        ixy="-1.00651703789158E-37"
+        ixz="-2.21874558717707E-37"
+        iyy="5.23598775598299E-19"
+        iyz="1.2379792257713E-35"
+        izz="5.23598775598299E-19" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrL_linkCameraOptical.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrL_linkCameraOptical.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="amrL_jointCameraOptical"
+    type="fixed">
+    <origin
+      xyz="0.0296056265566236 -0.00793280373239225 0"
+      rpy="-0.261799389602011 -1.57076037205913 -3.14159265178693" />
+    <parent
+      link="amrL_linkCamera" />
+    <child
+      link="amrL_linkCameraOptical" />
+    <axis
+      xyz="0.542473298190415 -0.760226772419698 0.357460452579921" />
+  </joint>
+  <link
+    name="amrL_linkGripper">
+    <inertial>
+      <origin
+        xyz="0.0847063770121506 3.76954377809824E-05 0.00741991125876162"
+        rpy="0 0 0" />
+      <mass
+        value="0.24581207560311" />
+      <inertia
+        ixx="0.000173718872320397"
+        ixy="5.57781611600143E-08"
+        ixz="1.48000412192727E-06"
+        iyy="0.000396702229326321"
+        iyz="9.5927121141121E-09"
+        izz="0.000340511782210335" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrL_linkGripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrL_linkGripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="amrL_jointGripper"
+    type="fixed">
+    <origin
+      xyz="0.00799999999482903 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="amrL_linkToolFL" />
+    <child
+      link="amrL_linkGripper" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="amrL_linkTCP">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="5.23598775598299E-10" />
+      <inertia
+        ixx="5.23598775598299E-19"
+        ixy="0"
+        ixz="0"
+        iyy="5.23598775598299E-19"
+        iyz="0"
+        izz="5.23598775598299E-19" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrL_linkTCP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrL_linkTCP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="amrL_jointTCP"
+    type="fixed">
+    <origin
+      xyz="0.1835124818737 0 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="amrL_linkGripper" />
+    <child
+      link="amrL_linkTCP" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="armL_link6DSensorPoint">
+    <inertial>
+      <origin
+        xyz="1.11022302462516E-16 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="5.23598775598299E-10" />
+      <inertia
+        ixx="5.23598775598299E-19"
+        ixy="0"
+        ixz="0"
+        iyy="5.23598775598299E-19"
+        iyz="0"
+        izz="5.23598775598299E-19" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link6DSensorPoint.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armL_link6DSensorPoint.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armL_joint6DSensorPoint"
+    type="fixed">
+    <origin
+      xyz="0.0269999999825501 0 0"
+      rpy="0 -1.5707963267949 0" />
+    <parent
+      link="armL_linkSensor" />
+    <child
+      link="armL_link6DSensorPoint" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="armR_link1">
+    <inertial>
+      <origin
+        xyz="-2.04573107087658E-06 0.00171146248855147 0.0678381714339882"
+        rpy="0 0 0" />
+      <mass
+        value="0.802504900427435" />
+      <inertia
+        ixx="0.00162991951541573"
+        ixy="2.88592676261385E-08"
+        ixz="-2.53976117494739E-08"
+        iyy="0.00194578860631295"
+        iyz="-3.08730405888571E-05"
+        izz="0.000859509290029012" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armR_Joint1"
+    type="revolute">
+    <origin
+      xyz="0 -0.1212 1.121"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="armR_link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="3.106"
+      effort="20"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armR_link2">
+    <inertial>
+      <origin
+        xyz="0.0477161018638863 1.57104563469623E-06 0.0214863272112014"
+        rpy="0 0 0" />
+      <mass
+        value="1.14647893632722" />
+      <inertia
+        ixx="0.00235198553766088"
+        ixy="-1.33424457744503E-07"
+        ixz="-8.27293965928133E-05"
+        iyy="0.005412789230384"
+        iyz="7.86896259079995E-08"
+        izz="0.00453230851517516" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armR_Joint2"
+    type="revolute">
+    <origin
+      xyz="0 -0.023 0.0903"
+      rpy="1.5708 -1.5708 3.1416" />
+    <parent
+      link="armR_link1" />
+    <child
+      link="armR_link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.09"
+      upper="2.09"
+      effort="20"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armR_link3">
+    <inertial>
+      <origin
+        xyz="0.00584977190684344 0.000904170202994603 0.0866680138241837"
+        rpy="0 0 0" />
+      <mass
+        value="1.04276867371937" />
+      <inertia
+        ixx="0.00153242748791082"
+        ixy="-8.61969314974043E-06"
+        ixz="-0.000210634238219251"
+        iyy="0.00179816225016161"
+        iyz="-2.462736207559E-05"
+        izz="0.00106684286681521" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armR_Joint3"
+    type="revolute">
+    <origin
+      xyz="0.1435 0 0.023"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="armR_link2" />
+    <child
+      link="armR_link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="3.106"
+      effort="17"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armR_link4">
+    <inertial>
+      <origin
+        xyz="0.0373989527870496 0.00776261430080238 -0.0219292601194017"
+        rpy="0 0 0" />
+      <mass
+        value="0.800830312217408" />
+      <inertia
+        ixx="0.00143745376804866"
+        ixy="-0.000282115762635408"
+        ixz="4.70571347778328E-05"
+        iyy="0.00270573959902655"
+        iyz="9.77621728175192E-06"
+        izz="0.00221854241065283" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armR_Joint4"
+    type="revolute">
+    <origin
+      xyz="0.018 -0.0235 0.1435"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="armR_link3" />
+    <child
+      link="armR_link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.53"
+      upper="1.047"
+      effort="17"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armR_link5">
+    <inertial>
+      <origin
+        xyz="3.26092018609891E-07 4.62985831812812E-05 0.0860858881640719"
+        rpy="0 0 0" />
+      <mass
+        value="1.15992300399068" />
+      <inertia
+        ixx="0.00370212655860192"
+        ixy="2.60432305125637E-08"
+        ixz="8.86444661761674E-08"
+        iyy="0.0031819787860472"
+        iyz="-5.85490207060861E-06"
+        izz="0.00163077227674644" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armR_Joint5"
+    type="revolute">
+    <origin
+      xyz="0.116 0.018004 -0.0235"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="armR_link4" />
+    <child
+      link="armR_link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="3.106"
+      effort="14"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armR_link6">
+    <inertial>
+      <origin
+        xyz="-1.96818554232259E-08 0.00404898310235091 -0.0450000333579732"
+        rpy="0 0 0" />
+      <mass
+        value="0.286165719724915" />
+      <inertia
+        ixx="0.000201989292541464"
+        ixy="-1.21575262324056E-09"
+        ixz="3.97156022652745E-10"
+        iyy="0.000217453843609665"
+        iyz="-3.43641952358407E-11"
+        izz="0.00018866274188744" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armR_Joint6"
+    type="revolute">
+    <origin
+      xyz="0 -0.045 0.198"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="armR_link5" />
+    <child
+      link="armR_link6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.047"
+      upper="1.047"
+      effort="14"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armR_link7">
+    <inertial>
+      <origin
+        xyz="-0.0374788831959782 8.94890742175747E-07 -0.0204320919163216"
+        rpy="0 0 0" />
+      <mass
+        value="0.350364815920076" />
+      <inertia
+        ixx="0.00044487405775779"
+        ixy="-1.01025833077017E-06"
+        ixz="-3.96431424612034E-05"
+        iyy="0.000856175323562527"
+        iyz="-6.68163427210159E-08"
+        izz="0.000644293462792855" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armR_Joint7"
+    type="revolute">
+    <origin
+      xyz="0 -0.0255 -0.045"
+      rpy="-1.5708 0 -3.1416" />
+    <parent
+      link="armR_link6" />
+    <child
+      link="armR_link7" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="14"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="armR_linkFL">
+    <inertial>
+      <origin
+        xyz="-0.00422033902314595 0 -1.51741196274813E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0146144424400504" />
+      <inertia
+        ixx="8.13669821886619E-06"
+        ixy="2.47917594582912E-21"
+        ixz="1.44563515040043E-10"
+        iyy="4.11599020482723E-06"
+        iyz="-2.40399407735362E-21"
+        izz="4.11599021002497E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_linkFL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_linkFL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armR_jointFL"
+    type="fixed">
+    <origin
+      xyz="-0.0935999999999993 0 -0.0254999999999923"
+      rpy="0 3.59547409239126E-05 0" />
+    <parent
+      link="armR_link7" />
+    <child
+      link="armR_linkFL" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="armR_linkSensor">
+    <inertial>
+      <origin
+        xyz="-0.0131234533970724 2.22044604925031E-16 -4.71850367445015E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0815908525850949" />
+      <inertia
+        ixx="4.12393606875418E-05"
+        ixy="1.06648897664627E-20"
+        ixz="5.71228239829627E-10"
+        iyy="2.53519359725511E-05"
+        iyz="2.67078329714324E-21"
+        izz="2.53519359930894E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_linkSensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_linkSensor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armR_jointSensor"
+    type="fixed">
+    <origin
+      xyz="-0.00739999999521684 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="armR_linkFL" />
+    <child
+      link="armR_linkSensor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="amrR_linkToolFL">
+    <inertial>
+      <origin
+        xyz="-0.00518222825663894 0.00916013068970445 -1.81253220654654E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0465875345812979" />
+      <inertia
+        ixx="4.633958604384E-05"
+        ixy="-4.819629075389E-07"
+        ixz="4.38301742951575E-10"
+        iyy="1.3799201187294E-05"
+        iyz="-9.76911469684677E-12"
+        izz="3.40922014580607E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrR_linkToolFL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrR_linkToolFL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="amrR_jointToolFL"
+    type="fixed">
+    <origin
+      xyz="-0.0269999999825487 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="armR_linkSensor" />
+    <child
+      link="amrR_linkToolFL" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="amrR_linkTransformCamera">
+    <inertial>
+      <origin
+        xyz="-0.00780327294454575 0.0127121174660054 -2.91139341745961E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00573249688664975" />
+      <inertia
+        ixx="1.53097935455478E-06"
+        ixy="1.01599728176281E-07"
+        ixz="2.86467364519537E-11"
+        iyy="8.86034520540714E-07"
+        iyz="5.00682497517569E-12"
+        izz="7.32517686893428E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrR_linkTransformCamera.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrR_linkTransformCamera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="amrR_jointTransformCamera"
+    type="fixed">
+    <origin
+      xyz="-0.00399999999741457 0.0581662479035541 0"
+      rpy="0 0 0" />
+    <parent
+      link="amrR_linkToolFL" />
+    <child
+      link="amrR_linkTransformCamera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="amrR_linkCamera">
+    <inertial>
+      <origin
+        xyz="-0.012577199373929 -0.00337005041746785 -4.5220994515649E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00767438801634322" />
+      <inertia
+        ixx="3.80975328618363E-07"
+        ixy="-9.37013948962933E-08"
+        ixz="-1.13243202708367E-11"
+        iyy="7.05566481821917E-07"
+        iyz="-3.36900937885957E-12"
+        izz="6.95935747208168E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrR_linkCamera.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrR_linkCamera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="amrR_jointCamera"
+    type="fixed">
+    <origin
+      xyz="-0.0142459803344782 0.0232385192159736 0"
+      rpy="0 0 0" />
+    <parent
+      link="amrR_linkTransformCamera" />
+    <child
+      link="amrR_linkCamera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="amrR_linkCameraOptical">
+    <inertial>
+      <origin
+        xyz="0 0 -1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="5.23598775598299E-10" />
+      <inertia
+        ixx="5.23598775598299E-19"
+        ixy="-3.67341984631965E-40"
+        ixz="-1.46936793852786E-39"
+        iyy="5.23598775598299E-19"
+        iyz="2.54962619718853E-35"
+        izz="5.23598775598299E-19" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrR_linkCameraOptical.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrR_linkCameraOptical.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="amrR_jointCameraOptical"
+    type="fixed">
+    <origin
+      xyz="-0.0296056265566237 -0.00793280373239225 0"
+      rpy="2.87979326576054 1.57076037205913 0" />
+    <parent
+      link="amrR_linkCamera" />
+    <child
+      link="amrR_linkCameraOptical" />
+    <axis
+      xyz="0.542497060954999 0.760240157237595 -0.357395917842445" />
+  </joint>
+  <link
+    name="amrR_linkGripper">
+    <inertial>
+      <origin
+        xyz="-0.084706909610465 -3.76950247975572E-05 0.00741382592674866"
+        rpy="0 0 0" />
+      <mass
+        value="0.24581210135717" />
+      <inertia
+        ixx="0.000173719092649539"
+        ixy="5.5776614885271E-08"
+        ixz="-1.49199681995737E-06"
+        iyy="0.000396702192937111"
+        iyz="-9.59170391186436E-09"
+        izz="0.000340511539324258" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrR_linkGripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrR_linkGripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="amrR_jointGripper"
+    type="fixed">
+    <origin
+      xyz="-0.00799999999482903 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="amrR_linkToolFL" />
+    <child
+      link="amrR_linkGripper" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="amrR_linkTCP">
+    <inertial>
+      <origin
+        xyz="1.11022302462516E-16 2.77555756156289E-17 0"
+        rpy="0 0 0" />
+      <mass
+        value="5.23598775598299E-10" />
+      <inertia
+        ixx="5.23598775598299E-19"
+        ixy="0"
+        ixz="0"
+        iyy="5.23598775598299E-19"
+        iyz="0"
+        izz="5.23598775598299E-19" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrR_linkTCP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/amrR_linkTCP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="amrR_jointTCP"
+    type="fixed">
+    <origin
+      xyz="-0.183512481718451 0 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="amrR_linkGripper" />
+    <child
+      link="amrR_linkTCP" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="armR_link6DSensorPoint">
+    <inertial>
+      <origin
+        xyz="-1.11022302462516E-16 2.22044604925031E-16 0"
+        rpy="0 0 0" />
+      <mass
+        value="5.23598775598299E-10" />
+      <inertia
+        ixx="5.23598775598299E-19"
+        ixy="0"
+        ixz="0"
+        iyy="5.23598775598299E-19"
+        iyz="0"
+        izz="5.23598775598299E-19" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link6DSensorPoint.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/ubuntu/workspace/lk_ceshi/rimbot-TJ-urdf_260822-6/meshes/armR_link6DSensorPoint.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="armR_joint6DSensorPoint"
+    type="fixed">
+    <origin
+      xyz="-0.0269999999825486 0 0"
+      rpy="3.14159265358979 -1.5707963267949 0" />
+    <parent
+      link="armR_linkSensor" />
+    <child
+      link="armR_link6DSensorPoint" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robot>
